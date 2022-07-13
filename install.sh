@@ -3,15 +3,7 @@ sudo apt-get autoremove -y
 sudo apt-get upgrade -y
 
 # Essentials
-sudo apt-get install -y bash zsh zgen sudo wget git \
-    make ca-certificates lsb-release \
-    vim nano libbrotli-dev cmake \
-    ccze jq less catimg \
-    tldr curl httpie man neofetch \
-    htop ncdu icdiff \
-    unzip zip bzip2 p7zip-full \
-    locales locales-all \
-    bat exa
+sudo apt-get install -y bash zsh zgen sudo wget git make ca-certificates lsb-release vim nano libbrotli-dev cmake ccze jq less catimg tldr curl httpie man neofetch htop ncdu icdiff unzip zip bzip2 p7zip-full locales locales-all bat exa
 #
 sudo apt-get autoremove -y
 sudo apt-get upgrade -y
@@ -19,7 +11,7 @@ sudo apt-get update -y
 # Fix batcat -> bat
 sudo ln -s /usr/bin/batcat /usr/local/bin/bat
 # Zsh
-sudo apt update && sudo apt install zsh
+sudo apt update && sudo apt install zsh -y
 sudo apt install git curl -y
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
